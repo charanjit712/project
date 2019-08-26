@@ -30,9 +30,10 @@
             
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./additems.html"><span class="fa fa-list fa-lg"></span> Add Items </a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Add Items </a></li>
                 <li class="nav-item"><a class="nav-link" href="./viewbooking.html"><span class="fa fa-info fa-lg"></span> View Bookings </a></li>
-                <li class="nav-item"><a class="nav-link" href="./feedbacks.html"><span class="fa fa-address-card fa-lg"></span> Customer Feedback</a></li>
+                <li class="nav-item"><a class="nav-link" href="./feedbacks.html"><span class="fa fa-address-card fa-lg"></span> View Feedbacks</a></li>
+                
                 <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-address-card fa-lg"></span> Logout</a></li>
                 
             </ul>
@@ -109,18 +110,59 @@
                 </div>
             </div>
         </div>
+        <!-- add items form goes here -->
+        <div class="row row-content align-items-center">
+            <div class="col-12">
+               <h4> Plz add new items  </h3>
+            </div>
         
+        <div class="col-12 col-md-9">
+            <!-- Form goes here-->
+            <form action="">
+                    <div class="form-group row">
+                            <label for="itemcategory" class="col-md-2 col-form-label">Item Category</label>
+                            <div class="col-md-10">
+                                    <select name="items">
+                                            <option value="starters">Starters</option>
+                                            <option value="deserts">Deserts</option>
+                                            <option value="seafood">Sea Food</option>
+                                            <option value="pizza">Pizza</option>
+                                          </select>
+                            </div>
+                        </div>
+                 <div class="form-group row">
+                         <label for="itemname" class="col-md-2 col-form-label">Item  Name</label>
+                         <div class="col-md-10">
+                             <input type="text" class="form-control" id="item" name="itemname" placeholder="Item Name">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="itemprice" class="col-md-2 col-form-label">Item Price</label>
+                         <div class="col-md-10">
+                             <input type="number" class="form-control" id="price" name="itemprice" placeholder="Item Price">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class=" btn btn-primary">Submit</button>
+    
+                        </div>
+                    </div>
+                        
+                         </form>
+                         </div>
+                         </div>
 
-    <footer>
+        <!-- add items form end here -->
+
+    
            <div class="row justify-content-center">             
                 <div class="col-auto">
-               <h2> <p> Welcome to the Admin Section </p></h2>
                     <p>© Copyright 2019 BBQ Nation</p>
                 </div>
            </div>
         </div>
     </footer>
-    
 <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
